@@ -39,17 +39,19 @@ void wrapper(T&& arg)
     试图把右值当作左值转发，如用左值引用类型`T`实例化声明（2）时，将会产生一个编译时错误。
     `T&&`作为函数形参的特殊规则，请参考[模板实参推演](templates/template_argument_deduction.md)。
 
-##参数（Parameters）
+##参数
 
 `t` -   待转发的对象
 
-##返回值(Return value)
+##返回值
 
 `static_cast<T&&>(t)`
 
-##异常（Exceptions）
+##异常
 
-`noexcep`指定： `noexcep`
+`noexcep`指定： `noexcep
+
+即不允许跑出异常。
 
 ##例子
 
@@ -114,7 +116,7 @@ lvalue overload, n=1
 rvalue overload, n=3
 ```
 
-##复杂度（Complexity）
+##复杂度
 
 常量级
 
