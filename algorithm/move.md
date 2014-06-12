@@ -1,6 +1,6 @@
 #移动（std::move）
 
-定义于头文件[algorithm](algorithm.md)中：
+定义于头文件[algorithm](http://en.cppreference.com/w/cpp/header/algorithm)中：
 
 ```C++
 template< class InputIt, class OutputIt >

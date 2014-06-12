@@ -1,6 +1,6 @@
 #逆向移动（std::move_backward）
 
-定义于头文件[algorithm](algorithm.md)中：
+定义于头文件[algorithm](http://en.cppreference.com/w/cpp/header/algorithm)中：
 
 ```C++
 template< class BidirIt1, class BidirIt2 >
@@ -18,7 +18,7 @@ first, last - 待移动元素区间
 
 ###类型要求
 
-- `BidirIt1, BidirIt2`必须满足[BidirectionalIterator](concept/BidirectionalIterator.md)的要求。
+- `BidirIt1, BidirIt2`必须满足[BidirectionalIterator](http://en.cppreference.com/w/cpp/concept/BidirectionalIterator)的要求。
 
 ##返回值
 目标区间的迭代器，指向所移动的最后一个元素。
