@@ -6,7 +6,10 @@
 
 然而，并不是纯粹的翻译，亦可能会加入自己的理解，所以可能会有不对的地方，欢迎纠错！
 
+> 带链接的为已翻译部分！
+
 ##Contents
+
 * Languages
     * Preprocessor
     * Kyewords
@@ -85,6 +88,3 @@
     * basic_string_view (library fundamentals TS)
     * memory_resource (library fundamentals TS)
     * Filesystem library (filesystem TS)
-
-
-
