@@ -4,8 +4,6 @@
 
 [cppreference.com](http://en.cppreference.com/w/)所谓的中文版乃是 google translate的结果，你懂得，于是禀着现学现用现翻译的原则，用到哪部分就先翻译哪部分，不保证进度和顺序，不分先后。
 
-然而，并不是纯粹的翻译，亦可能会加入自己的理解，所以可能会有不对的地方，欢迎纠错！
-
 
 ##Contents
 
@@ -29,11 +27,11 @@
     * Pair
     * Tuple (C++11)
     * Swap, forward and move
-        * swap
+        * [swap](utility/swap.md)
         * [forward](utility/forward.md)
-        * move
-        * move_if_noexcept
-        * declval
+        * [move](utility/move.md)
+        * [move_if_noexcept](utility/move_if_noexcept.md)
+        * [declval](utility/declval.md)
     * integer_sequence (C++14)
 * Strings library
     * basic_string
@@ -55,6 +53,8 @@
     * queue
     * priority_queue
 * Algorithms library
+    * [move](algorithm/move.md)
+    * [move_backward](algorithm/move_backward.md)
 * Iterators library
 * Numerics library
     * Common mathematical functions
