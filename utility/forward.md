@@ -4,7 +4,7 @@
 
 ```C++
 template< class T >
-T&& forward( typename std::remove_reference<T>::type& t );              (1）    (C++11 - C++14）
+T&& forward( typename std::remove_reference<T>::type& t );              (1)     (C++11 - C++14)
 
 template< class T >
 constexpr T&& forward( typename std::remove_reference<T>::type& t );    (1)     (C++14 - )
@@ -120,11 +120,6 @@ rvalue overload, n=3
 
 ##请参阅
 
-------
 - [move](move.md)（C++11）                            转换为右值引用（函数模板）
 
 - [move_if_noexcept](move_if_noexcept.md)（C++11）    当移动构造函数未抛出异常时转换为右值引用（函数模板）
-
-------
-
-
