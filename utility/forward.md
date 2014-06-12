@@ -2,23 +2,21 @@
 
 定义于头文件[utility](utility.md)中：
 
-------
 ```C++
 template< class T >
-T&& forward( typename std::remove_reference<T>::type& t );              （1） （C++11 —— C++14）
+T&& forward( typename std::remove_reference<T>::type& t );              (1）    (C++11 - C++14）
 
 template< class T >
-constexpr T&& forward( typename std::remove_reference<T>::type& t );    （1）（C++14 —— ）
+constexpr T&& forward( typename std::remove_reference<T>::type& t );    (1)     (C++14 - )
 ```
 
 ```C++
 template< class T >
-T&& forward( typename std::remove_reference<T>::type&& t );             （2）（C++11 —— C++14）
+T&& forward( typename std::remove_reference<T>::type&& t );             (2)     (C++11 - C++14)
 
 template< class T >
-constexpr T&& forward( typename std::remove_reference<T>::type&& t );   （2）（C++14 —— ）
+constexpr T&& forward( typename std::remove_reference<T>::type&& t );   (2)     (C++14 - )
 ```
-------
 
 当在函数模板中按一下方法调用`forward`时，转发传递给调用函数的实参类型的变量给另外一个函数。
 
