@@ -1,6 +1,6 @@
 #转发（std::forward）
 
-定义于头文件[utility](utility.md)中：
+定义于头文件[utility](http://en.cppreference.com/w/cpp/header/utility)中：
 
 ```C++
 template< class T >
