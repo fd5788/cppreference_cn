@@ -20,7 +20,7 @@ first, last - 待移动元素区间
 - `OutputIt`必须满足`OutputIterator`的要求。
 
 ##返回值
-输出迭代器指向同步移动到最后一个元素时指向的位置。
+输出迭代器，指向所移动的最后一个元素的下一个位置（d_first + (last - first)）。
 
 ##复杂度
 
