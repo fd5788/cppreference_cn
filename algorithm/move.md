@@ -12,7 +12,7 @@ OutputIt move( InputIt first, InputIt last, OutputIt d_first );    (C++11 - )
 ##参数
 
 first, last - 待移动元素区间
-    d_first - 目标区间的起始位置。如果 d_first 在区间 [first, last) 之中, 则不能用 std::move，而要用 std::move_backward 替代之。
+    d_first - 目标区间的起始位置。如果 d_first 在区间 [first, last) 之中, 则不能用[std::move](move.md)，而要用[std::move_backward](move_backward.md)替代之。
 
 ###类型要求
 
@@ -41,7 +41,7 @@ OutputIt move(InputIt first, InputIt last, OutputIt d_first)
 
 ##注意
 
-移动重叠区间时，如果目标区间的起始位置不在源区间内，那么用 std::move 移动到目标区间左侧是合适的；如果目标区间的终止位置不在源区间内，那么用 std::move_backward 移动到目标区间右侧亦是合适的。
+移动重叠区间时，如果目标区间的起始位置不在源区间内，那么用[std::move](move.md) 移动到目标区间左侧是合适的；如果目标区间的终止位置不在源区间内，那么用[std::move_backward](move_backward.md) 移动到目标区间右侧亦是合适的。
 
 ##例子
 
