@@ -5,7 +5,9 @@
 ```C++
 template< class T >
 T&& forward( typename std::remove_reference<T>::type& t );              (1)     (C++11 - C++14)
+```
 
+```C++
 template< class T >
 constexpr T&& forward( typename std::remove_reference<T>::type& t );    (1)     (C++14 - )
 ```
@@ -13,7 +15,9 @@ constexpr T&& forward( typename std::remove_reference<T>::type& t );    (1)     
 ```C++
 template< class T >
 T&& forward( typename std::remove_reference<T>::type&& t );             (2)     (C++11 - C++14)
+```
 
+```C++
 template< class T >
 constexpr T&& forward( typename std::remove_reference<T>::type&& t );   (2)     (C++14 - )
 ```
@@ -36,8 +40,9 @@ void wrapper(T&& arg)
 
 ##注意
 
-    试图把右值当作左值转发，如用左值引用类型`T`实例化声明（2）时，将会产生一个编译时错误。
-    `T&&`作为函数形参的特殊规则，请参考[模板实参推演](templates/template_argument_deduction.md)。
+试图把右值当作左值转发，将会产生一个编译时错误，如用左值引用类型`T`实例化声明（2）的情形。
+
+`T&&`作为函数形参的特殊规则，请参考[模板实参推演](templates/template_argument_deduction.md)。
 
 ##参数
 

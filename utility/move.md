@@ -5,7 +5,8 @@
 ```C++
 template< class T >
 typename std::remove_reference<T>::type&& move( T&& t );              (C++11 - C++14)
-            
+```
+```C++
 template< class T >
 constexpr typename std::remove_reference<T>::type&& move( T&& t );    (C++14 - )
 ```

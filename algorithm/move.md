@@ -11,8 +11,8 @@ OutputIt move( InputIt first, InputIt last, OutputIt d_first );    (C++11 - )
 
 ##参数
 
-first, last - 待移动元素区间
-    d_first - 目标区间的起始位置。如果 d_first 在区间 [first, last) 之中, 则不能用[std::move](move.md)，而要用[std::move_backward](move_backward.md)替代之。
+- first, last - 待移动元素区间
+-     d_first - 目标区间的起始位置。如果 d_first 在区间 [first, last) 之中, 则不能用[std::move](move.md)，而要用[std::move_backward](move_backward.md)替代之。
 
 ###类型要求
 
