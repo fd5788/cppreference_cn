@@ -1,6 +1,6 @@
 #逆向移动（std::move_backward）
 
-定义于头文件\<algorithm\>（[en](http://en.cppreference.com/w/cpp/header/algorithm)）中：
+定义于头文件`<algorithm>`（[en](http://en.cppreference.com/w/cpp/header/algorithm)）中：
 
 ```C++
 template< class BidirIt1, class BidirIt2 >
