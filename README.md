@@ -7,16 +7,16 @@
 
 ##Contents
 
-* Languages
+* Languages([en](http://en.cppreference.com/w/cpp/language))
     * Preprocessor
     * Kyewords
     * Operator precedence
     * Escape sequences
     * Fundamental types
     * [Templates](language/templates/templates.md)
-* Headers
-* Concepts
-* Utilities library
+* Headers([en](http://en.cppreference.com/w/cpp/header))
+* Concepts([en](http://en.cppreference.com/w/cpp/concept))
+* Utilities library([en](http://en.cppreference.com/w/cpp/utility))
     * Type support
     * Dynamic memory management
     * Error handling
@@ -33,12 +33,12 @@
         * [move_if_noexcept](utility/move_if_noexcept.md)
         * [declval](utility/declval.md)
     * integer_sequence (C++14)
-* Strings library
+* Strings library([en](http://en.cppreference.com/w/cpp/string))
     * basic_string
     * Null-terminated byte strings
     * Null-terminated multibyte strings
     * Null-terminated wide strings
-* Containers library
+* Containers library([en](http://en.cppreference.com/w/cpp/container))
     * array (C++11)
     * vector
     * deque
@@ -52,15 +52,15 @@
     * stack
     * queue
     * priority_queue
-* Algorithms library
+* Algorithms library([en](http://en.cppreference.com/w/cpp/algorithm))
     * [move](algorithm/move.md)
     * [move_backward](algorithm/move_backward.md)
-* Iterators library
-* Numerics library
+* Iterators library([en](http://en.cppreference.com/w/cpp/iterator))
+* Numerics library([en](http://en.cppreference.com/w/cpp/numeric))
     * Common mathematical functions
     * Complex numbers
     * Pseudo-random number generation
-* Input/output library
+* Input/output library([en](http://en.cppreference.com/w/cpp/io))
     * basic_streambuf
     * basic_filebuf
     * basic_stringbuf
@@ -77,13 +77,13 @@
     * basic_stringstream
     * I/O manipulators
     * C-style I/O
-* Localizations library
-* Regular expressions library (C++11)
-* Atomic operations library (C++11)
-* Thread support library (C++11)
-* Experimental standard libraries
-    * optional (library fundamentals TS)
-    * any (library fundamentals TS)
-    * basic_string_view (library fundamentals TS)
-    * memory_resource (library fundamentals TS)
-    * Filesystem library (filesystem TS)
+* Localizations library([en](http://en.cppreference.com/w/cpp/locale))
+* Regular expressions library([en](http://en.cppreference.com/w/cpp/regex)) (C++11)
+* Atomic operations library([en](http://en.cppreference.com/w/cpp/atomic)) (C++11)
+* Thread support library([en](http://en.cppreference.com/w/cpp/thread)) (C++11)
+* Experimental standard libraries([en](http://en.cppreference.com/w/cpp/experimental))
+    * optional (library fundamentals TS)([en](http://en.cppreference.com/w/cpp/experimental/optional))
+    * any (library fundamentals TS)([en](http://en.cppreference.com/w/cpp/experimental/any))
+    * basic_string_view (library fundamentals TS)([en](http://en.cppreference.com/w/cpp/experimental/basic_string_view))
+    * Polymorphic allocator library (library fundamentals TS)([en](http://en.cppreference.com/w/cpp/experimental/memory))
+    * Filesystem library (filesystem TS)([en](http://en.cppreference.com/w/cpp/experimental/fs))
