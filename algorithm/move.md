@@ -32,10 +32,10 @@ last-first次移动赋值的代价。
 template<class InputIt, class OutputIt>
 OutputIt move(InputIt first, InputIt last, OutputIt d_first)
 {
-        while (first != last) {
-                    *d_first++ = std::move(*first++);
-                        }
-            return d_first;
+    while (first != last) {
+        *d_first++ = std::move(*first++);
+    }
+    return d_first;
 }
 ```
 
