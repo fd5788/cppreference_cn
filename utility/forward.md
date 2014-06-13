@@ -54,7 +54,7 @@ void wrapper(T&& arg)
 
 ##异常
 
-`noexcep`指定： `noexcep
+`noexcep`指定： `noexcep`
 
 即不允许跑出异常。
 
