@@ -15,7 +15,9 @@
     * Operator precedence
     * Escape sequences
     * Fundamental types
-    * [Templates](language/templates/templates.md)
+    * [Templates] (language/templates/templates.md)
+    * [Expressions] （[en](http://en.cppreference.com/w/cpp/language/expressions)）
+        * [Value categories](language/value_category.me)
 * Headers ([en](http://en.cppreference.com/w/cpp/header))
 * Concepts ([en](http://en.cppreference.com/w/cpp/concept))
 * Utilities library ([en](http://en.cppreference.com/w/cpp/utility))
