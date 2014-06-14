@@ -107,6 +107,8 @@ int main()
 
     std::cout << "B\n";
     auto t = make_unique<B>(2, i, 3);
+
+    return 0;
 }
 ```
 

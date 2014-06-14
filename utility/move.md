@@ -99,6 +99,8 @@ int main()
     std::cout << "Before move from str2, str2 = '" << str2 << "'\n";
     v[0] = std::move(str2);
     std::cout << "After move from str2, str2 = '" << str2 << "'\n";
+
+    return 0;
 }
 ```
 

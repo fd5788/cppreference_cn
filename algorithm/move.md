@@ -72,6 +72,8 @@ int main()
 
     std::move(v.begin(), v.end(), std::back_inserter(l));
     for (auto& t : l) t.join();
+
+    return 0;
 }
 ```
 

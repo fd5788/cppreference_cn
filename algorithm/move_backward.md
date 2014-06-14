@@ -86,6 +86,8 @@ int main()
         std::cout << s << ' ';
     }   
     std::cout << '\n';
+
+    return 0;
 }
 ```
 
