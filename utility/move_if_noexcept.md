@@ -8,7 +8,7 @@ typenamestd::conditional<
 !std::is_nothrow_move_constructible<T>::value && std::is_copy_constructible<T>::value,
 const T&,
 T&&
->::typemove_if_noexcept(T& x);                                                                (C++11 - C++14)
+>::typemove_if_noexcept(T& x) noexcept ;                                                                (C++11 - C++14)
 ```
 
 ```C++
@@ -17,7 +17,7 @@ constexprtypename std::conditional<
 !std::is_nothrow_move_constructible<T>::value && std::is_copy_constructible<T>::value,
 const T&,
 T&&
->::typemove_if_noexcept(T& x);                                                                (C++14 - )
+>::typemove_if_noexcept(T& x) noexcept ;                                                                (C++14 - )
 ```
 
 如果移动构造函数不抛出异常，`move_if_noexcept`返回指向实参的右值引用，否则返回指向实参的左值引用。这是移动语义和强异常保证联合使用的典范。

@@ -4,11 +4,11 @@
 
 ```C++
 template< class T >
-typename std::remove_reference<T>::type&& move( T&& t );              (C++11 - C++14)
+typename std::remove_reference<T>::type&& move( T&& t ) noexcept ;              (C++11 - C++14)
 ```
 ```C++
 template< class T >
-constexpr typename std::remove_reference<T>::type&& move( T&& t );    (C++14 - )
+constexpr typename std::remove_reference<T>::type&& move( T&& t ) noexcept ;    (C++14 - )
 ```
 
 `std::move`返回指向实参的右值引用，同时转化实参为将亡值（`xvalue`，`eXpiring Value`[en](http://en.cppreference.com/w/cpp/language/value_category)。
@@ -38,7 +38,7 @@ constexpr typename std::remove_reference<T>::type&& move( T&& t );    (C++14 - )
 ```C++
 // Simple move constructor
 Foo(A&& arg) : member(std::move(arg)) // the expression "arg" is lvalue
-{} 
+{}
 // Simple move assignment operator
 A& operator=(A&& other) {
      member = std::move(other.member);
@@ -72,27 +72,27 @@ s = std::move(s); // undefined behavior
 #include <utility>
 #include <vector>
 #include <string>
- 
+
 int main()
 {
     std::string str = "Hello";
     std::vector<std::string> v;
- 
-    // uses the push_back(const T&) overload, which means 
+
+    // uses the push_back(const T&) overload, which means
     // we'll incur the cost of copying str
     v.push_back(str);
     std::cout << "After copy, str is \"" << str << "\"\n";
- 
-    // uses the rvalue reference push_back(T&&) overload, 
+
+    // uses the rvalue reference push_back(T&&) overload,
     // which means no strings will be copied; instead, the contents
     // of str will be moved into the vector.  This is less
     // expensive, but also means str might now be empty.
     v.push_back(std::move(str));
     std::cout << "After move, str is \"" << str << "\"\n";
- 
+
     std::cout << "The contents of the vector are \"" << v[0]
                                          << "\", \"" << v[1] << "\"\n";
- 
+
     // string move assignment operator is often implemented as swap,
     // in this case, the moved-from object is NOT empty
     std::string str2 = "Good-bye";
