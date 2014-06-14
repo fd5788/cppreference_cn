@@ -31,7 +31,7 @@ constexpr typename std::remove_reference<T>::type&& move( T&& t ) noexcept ;    
 
 ##注意
 
-在重载选择时，若实参为右值引用类型（无论是形如临时对象这样的`prvalues`还是如`std::move`转换的`xvalues`），则形参为右值引用类型的函数（包括移动构造函数[move constructors](../language/move_constructor.md)、移动赋值运算符[move assignment operators](../language/move_operator.md)和形如`std::vector::push_back`这样的普通的成员函数）会获得匹配。如果实参为资源独占型对象，重载有选择窃取（`move`）实参所持有的资源的权利，但这不是必须的，即不一定会这样做。例如，链表类型的移动构造函数可能会复制指针并赋给链表头结点，然后把实参结点置为`nullptr`，而不是分配空间并逐个复制结点。
+在重载选择时，若实参为右值引用类型（无论是形如临时对象这样的纯右值（`prvalues`）还是如`std::move`转化而来的将亡值（`xvalues`）），则形参为右值引用类型的函数（包括移动构造函数[move constructors](../language/move_constructor.md)、移动赋值运算符[move assignment operators](../language/move_operator.md)和形如`std::vector::push_back`这样的普通的成员函数）会获得匹配。如果实参为资源独占型对象，重载有选择窃取（`move`）实参所持有的资源的权利，但这不是必须的，即不一定会这样做。例如，链表类型的移动构造函数可能会复制指针并赋给链表头结点，然后把实参结点置为`nullptr`，而不是分配空间并逐个复制结点。
 
 右值引用同时又是左值（`lvalues`），而且必须先转化为`xvalues`才能传递给接受右值引用参数的函数以便正确重载。这就是为什么移动构造函数和移动赋值操作符常常需要使用`std::move`的原因：
 
