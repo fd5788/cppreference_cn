@@ -107,7 +107,7 @@ int main()
 }
 ```
 
-一种可能的输出为：
+一种可能的输出为（下面是 GCC 4.8.2 的输出）：
 
 ```C++
 After copy, str is "Hello"
