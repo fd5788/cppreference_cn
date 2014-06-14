@@ -22,7 +22,7 @@ template< class T >
 constexpr T&& forward( typename std::remove_reference<T>::type&& t ) noexcept ;   (2)     (C++14 - )
 ```
 
-在函数模板中按下面的方式使用`forward`调用函数时，转发传递过来的实参及其值类型（[value category](../language/value_category)）给另外一个函数。
+在函数模板中按下面的方式使用`forward`调用函数时，转发传递过来的实参及其值类型（[value category](../language/value_category.md)）给另外一个函数。
 
 比如，如果`wrapper`函数代码如下，该模板将按下面描述的那样实例化：
 
