@@ -22,7 +22,7 @@ template< class T >
 constexpr T&& forward( typename std::remove_reference<T>::type&& t );   (2)     (C++14 - )
 ```
 
-当在函数模板中按一下方法调用`forward`时，转发传递给调用函数的实参类型的变量给另外一个函数。
+当在函数模板中按一下方法调用`forward`时，转发（`forward`）传递给调用函数的实参类型的变量给另外一个函数。
 
 比如，如果`wrapper`函数代码如下，该模板将按下面描述的那样实例化：
 
@@ -127,6 +127,6 @@ rvalue overload, n=3
 
 ##请参阅
 
-- [move](move.md)（C++11）                            转换为右值引用（函数模板）
+- [move](move.md)（C++11）                            强制转换为右值引用（函数模板）
 
-- [move_if_noexcept](move_if_noexcept.md)（C++11）    当移动构造函数未抛出异常时转换为右值引用（函数模板）
+- [move_if_noexcept](move_if_noexcept.md)（C++11）    当移动构造函数未抛出异常时强制转换为右值引用（函数模板）

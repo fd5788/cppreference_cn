@@ -95,4 +95,4 @@ Throwingcopy constructor called
 ##请参阅
 
 -[forward](forward.md)(C++11)                      转发函数实参（函数模板）
--[move](move.md)(C++11)                            转换为右值引用（函数模板）
+-[move](move.md)(C++11)                            强制转换为右值引用（函数模板）

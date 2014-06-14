@@ -119,5 +119,5 @@ After move from str2, str2 = 'Hello'
 ##请参阅
 
 - [forward](forward.md)(C++11)                      转发函数实参（函数模板）
-- [move_if_noexcept](move_if_noexcept.md)(C++11)    如果移动构造函数不跑出异常就得到一个右值引用（函数模板）
+- [move_if_noexcept](move_if_noexcept.md)(C++11)    如果移动构造函数不跑出异常就强制转换为右值引用（函数模板）
 - [move](../algorithm/move.md)(C++11)               移动区间里的元素到另一个区间（函数模板）
