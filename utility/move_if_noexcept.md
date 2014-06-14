@@ -1,4 +1,4 @@
-##未跑出异常时强制转化为右值（std::move_if_noexcept)（[en](http://en.cppreference.com/w/cpp/utility/move_if_noexcept）
+##未抛出常时强制转化为右值（std::move_if_noexcept)（[en](http://en.cppreference.com/w/cpp/utility/move_if_noexcept)）
 
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
