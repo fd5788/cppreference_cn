@@ -5,6 +5,7 @@
 
 [cppreference.com](http://en.cppreference.com/w/)所谓的中文版乃是 google translate的结果，你懂的，于是禀着现学现用现翻译的原则，用到哪部分就先翻译哪部分，不分先后。
 
+当然，主要关注C++11新标准部分。
 
 ##Contents
 
