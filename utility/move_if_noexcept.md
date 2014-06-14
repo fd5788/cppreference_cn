@@ -1,4 +1,4 @@
-##未跑出异常时强制转化为右值（std::move_if_noexcept)
+##未跑出异常时强制转化为右值（std::move_if_noexcept)（[en](http://en.cppreference.com/w/cpp/utility/move_if_noexcept）
 
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
@@ -92,7 +92,7 @@ Throwingcopy constructor called
 
 常量级
 
-##请参阅
+##另见
 
 -[forward](forward.md)(C++11)                      转发函数实参（函数模板）
 -[move](move.md)(C++11)                            强制转化为右值引用（函数模板）

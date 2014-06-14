@@ -1,4 +1,4 @@
-#转发（std::forward）
+#转发（std::forward）（[en](http://en.cppreference.com/w/cpp/utility/forward)）
 
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
@@ -125,7 +125,7 @@ rvalue overload, n=3
 
 常量级
 
-##请参阅
+##另见
 
 - [move](move.md)（C++11）                            强制转化为右值引用（函数模板）
 

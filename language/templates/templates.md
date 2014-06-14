@@ -1,4 +1,4 @@
-# 模板（Templates）
+# 模板（Templates）（[en](http://en.cppreference.com/w/cpp/language/templates/templates)）
 
 C++ 的模板是这样一个独立部分（entity），它至少定义如下之一：
 

@@ -1,4 +1,4 @@
-#逆向移动（std::move_backward）
+#逆向移动（std::move_backward）（[en](http://en.cppreference.com/w/cpp/header/algorithm/move_backward)）
 
 定义于头文件`<algorithm>`（[en](http://en.cppreference.com/w/cpp/header/algorithm)）中：
 
@@ -98,6 +98,6 @@ src:
 dest: foo bar baz
 ```
 
-##请参阅
+##另见
 
 - [move](move.md)（C++11）           移动区间里的元素到另一个新的位置（函数模板）
