@@ -40,7 +40,7 @@ void wrapper(T&& arg)
 
 ##注意
 
-试图把右值当作左值转发，将会产生一个编译时错误，如用左值引用类型`T`实例化声明（2）的情形。
+试图把右值当作左值转发，将会产生一个编译时错误，如用左值引用类型`T`实例化声明（2）就是如此。
 
 `T&&`作为函数形参的特殊规则 —— C++11新引入了“引用折叠”（`reference collapsing`），请参考[模板实参推演](templates/template_argument_deduction.md)。
 
