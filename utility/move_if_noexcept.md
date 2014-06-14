@@ -1,4 +1,4 @@
-##移动（std::move_if_noexcept)
+##未跑出异常时强制转化为右值（std::move_if_noexcept)
 
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
@@ -20,7 +20,7 @@ T&&
 >::typemove_if_noexcept(T& x);                                                                (C++14 - )
 ```
 
-如果移动构造函数不抛出异常，移动（`move_if_noexcept`）会得到指向实参的右值引用，否则会得到指向实参的左值引用。这是移动语义和强异常保证联合使用的典范。
+如果移动构造函数不抛出异常，`move_if_noexcept`返回指向实参的右值引用，否则返回指向实参的左值引用。这是移动语义和强异常保证联合使用的典范。
 
 ##参数
 
@@ -95,4 +95,4 @@ Throwingcopy constructor called
 ##请参阅
 
 -[forward](forward.md)(C++11)                      转发函数实参（函数模板）
--[move](move.md)(C++11)                            强制转换为右值引用（函数模板）
+-[move](move.md)(C++11)                            强制转化为右值引用（函数模板）

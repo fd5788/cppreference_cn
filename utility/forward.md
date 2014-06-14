@@ -127,6 +127,6 @@ rvalue overload, n=3
 
 ##请参阅
 
-- [move](move.md)（C++11）                            强制转换为右值引用（函数模板）
+- [move](move.md)（C++11）                            强制转化为右值引用（函数模板）
 
-- [move_if_noexcept](move_if_noexcept.md)（C++11）    当移动构造函数未抛出异常时强制转换为右值引用（函数模板）
+- [move_if_noexcept](move_if_noexcept.md)（C++11）    当移动构造函数未抛出异常时强制转化为右值引用（函数模板）
