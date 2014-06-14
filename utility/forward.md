@@ -1,25 +1,25 @@
-#转发（std::forward）（[en](http://en.cppreference.com/w/cpp/utility/forward)）
+#转发（std::forward（[en](http://en.cppreference.com/w/cpp/utility/forward)）
 
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
 ```C++
 template< class T >
-T&& forward( typename std::remove_reference<T>::type& t ) noexcep ;              (1)     (C++11 - C++14)
+T&& forward( typename std::remove_reference<T>::type& t ) noexcept ;              (1)     (C++11 - C++14)
 ```
 
 ```C++
 template< class T >
-constexpr T&& forward( typename std::remove_reference<T>::type& t ) noexcep ;    (1)     (C++14 - )
+constexpr T&& forward( typename std::remove_reference<T>::type& t ) noexcept ;    (1)     (C++14 - )
 ```
 
 ```C++
 template< class T >
-T&& forward( typename std::remove_reference<T>::type&& t ) noexcep ;             (2)     (C++11 - C++14)
+T&& forward( typename std::remove_reference<T>::type&& t ) noexcept ;             (2)     (C++11 - C++14)
 ```
 
 ```C++
 template< class T >
-constexpr T&& forward( typename std::remove_reference<T>::type&& t ) noexcep ;   (2)     (C++14 - )
+constexpr T&& forward( typename std::remove_reference<T>::type&& t ) noexcept ;   (2)     (C++14 - )
 ```
 
 当在函数模板中按一下方法调用`forward`时，转发（`forward`）传递给调用函数的实参类型的变量给另外一个函数。
@@ -54,7 +54,7 @@ void wrapper(T&& arg)
 
 ##异常
 
-`noexcep`指定： `noexcep`
+`noexcept`指定： `noexcept`
 
 即不允许跑出异常。
 
