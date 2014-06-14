@@ -28,8 +28,8 @@
     * Pair (C++11)
     * Tuple (C++11)
     * Swap, forward and move
-        * [swap](utility/swap.md) (C++11)
-        * [exchange](utility/exchange.md) (C++11)
+        * [swap](utility/swap.md)
+        * [exchange](utility/exchange.md) (C++14)
         * [forward](utility/forward.md) (C++11)
         * [move](utility/move.md) (C++11)
         * [move_if_noexcept](utility/move_if_noexcept.md) (C++11)
