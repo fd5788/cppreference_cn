@@ -3,28 +3,28 @@
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
 ```C++
-template< class T >
-typename std::conditional<  
-    !std::is_nothrow_move_constructible<T>::value && std::is_copy_constructible<T>::value,
-    const T&,
-    T&&
->::type move_if_noexcept(T& x);                                                                (C++11 - C++14)
+template<class T >
+typenamestd::conditional<
+!std::is_nothrow_move_constructible<T>::value && std::is_copy_constructible<T>::value,
+const T&,
+T&&
+>::typemove_if_noexcept(T& x);                                                                (C++11 - C++14)
 ```
 
-```C++         
-template< class T >
-constexpr typename std::conditional<  
-    !std::is_nothrow_move_constructible<T>::value && std::is_copy_constructible<T>::value,
-    const T&,
-    T&&
->::type move_if_noexcept(T& x);                                                                (C++14 - )
+```C++
+template<class T >
+constexprtypename std::conditional<
+!std::is_nothrow_move_constructible<T>::value && std::is_copy_constructible<T>::value,
+const T&,
+T&&
+>::typemove_if_noexcept(T& x);                                                                (C++14 - )
 ```
 
 如果移动构造函数不抛出异常，移动（`move_if_noexcept`）会得到指向实参的右值引用，否则会得到指向实参的左值引用。这是移动语义和强异常保证联合使用的典范。
 
 ##参数
 
-`x` - 待移动或复制的对象
+`x`- 待移动或复制的对象
 
 ##返回值
 
@@ -32,7 +32,7 @@ constexpr typename std::conditional<
 
 ##异常
 
-`noexcept`指定： `noexcept`
+`noexcept`指定：`noexcept`
 
 即不允许抛出异常。
 
@@ -43,49 +43,49 @@ constexpr typename std::conditional<
 ##例子
 
 ```C++
-#include <iostream>
-#include <utility>
- 
-struct Bad
+#include<iostream>
+#include<utility>
+
+structBad
 {
-    Bad() {}
-    Bad(Bad&&)  // may throw
-    {
-        std::cout << "Throwing move constructor called\n";
-    }
-    Bad(const Bad&) // may throw as well
-    {
-        std::cout << "Throwing copy constructor called\n";
-    }
+Bad() {}
+Bad(Bad&&)  // may throw
+{
+std::cout << "Throwing move constructor called\n";
+}
+Bad(const Bad&) // may throw as well
+{
+std::cout << "Throwing copy constructor called\n";
+}
 };
- 
-struct Good
+
+structGood
 {
-    Good() {}
-    Good(Good&&) noexcept // will NOT throw
-    {
-        std::cout << "Non-throwing move constructor called\n";
-    }
-    Good(const Good&) noexcept // will NOT throw
-    {
-        std::cout << "Non-throwing copy constructor called\n";
-    }
+Good() {}
+Good(Good&&) noexcept // will NOT throw
+{
+std::cout << "Non-throwing move constructor called\n";
+}
+Good(const Good&) noexcept // will NOT throw
+{
+std::cout << "Non-throwing copy constructor called\n";
+}
 };
- 
-int main()
+
+intmain()
 {
-    Good g;
-    Bad b;
-    Good g2 = std::move_if_noexcept(g);
-    Bad b2 = std::move_if_noexcept(b);
+Good g;
+Bad b;
+Good g2 = std::move_if_noexcept(g);
+Bad b2 = std::move_if_noexcept(b);
 }
 ```
 
 输出为：
 
 ```C++
-Non-throwing move constructor called
-Throwing copy constructor called
+Non-throwingmove constructor called
+Throwingcopy constructor called
 ```
 
 ##复杂度
@@ -94,5 +94,5 @@ Throwing copy constructor called
 
 ##请参阅
 
-- [forward](forward.md)(C++11)                      转发函数实参（函数模板）
-- [move](move.md)(C++11)                            转换为右值引用（函数模板）
+-[forward](forward.md)(C++11)                      转发函数实参（函数模板）
+-[move](move.md)(C++11)                            转换为右值引用（函数模板）
