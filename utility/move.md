@@ -11,7 +11,7 @@ template< class T >
 constexpr typename std::remove_reference<T>::type&& move( T&& t ) noexcept ;    (C++14 - )
 ```
 
-`std::move`返回指向实参的右值引用，同时转化实参为将亡值（`xvalue`，`eXpiring Value`[en](http://en.cppreference.com/w/cpp/language/value_category)。
+`std::move`返回指向实参的右值引用，同时转化实参为将亡值（`xvalue`，`eXpiring Value`[en](http://en.cppreference.com/w/cpp/language/value_category)）。
 
 接受`xvalue`类型的代码有机会优化不必要的额外开销，通过窃取实参的数据，而从导致其处于有效（生命期尚未结束）但未指定的状态。
 
