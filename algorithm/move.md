@@ -3,7 +3,7 @@
 定义于头文件`<algorithm>`（[en](http://en.cppreference.com/w/cpp/header/algorithm)）中：
 
 ```C++
-template< class InputIt, class OutputIt >
+template< typename InputIt, typename OutputIt >
 OutputIt move( InputIt first, InputIt last, OutputIt d_first );    (C++11 - )
 ```
 
@@ -29,7 +29,7 @@ last-first次移动赋值的代价。
 ##可能的实现
 
 ```C++
-template<class InputIt, class OutputIt>
+template< typename InputIt, typename OutputIt>
 OutputIt move(InputIt first, InputIt last, OutputIt d_first)
 {
     while (first != last) {

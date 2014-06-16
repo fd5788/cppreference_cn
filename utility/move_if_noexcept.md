@@ -3,7 +3,7 @@
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
 ```C++
-template<class T >
+template<typename T >
 typenamestd::conditional<
 !std::is_nothrow_move_constructible<T>::value && std::is_copy_constructible<T>::value,
 const T&,
@@ -12,7 +12,7 @@ T&&
 ```
 
 ```C++
-template<class T >
+template<typename  T >
 constexprtypename std::conditional<
 !std::is_nothrow_move_constructible<T>::value && std::is_copy_constructible<T>::value,
 const T&,

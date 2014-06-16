@@ -3,7 +3,7 @@
 定义于头文件`<algorithm>`（[en](http://en.cppreference.com/w/cpp/header/algorithm)）中：
 
 ```C++
-template< class BidirIt1, class BidirIt2 >
+template< typename BidirIt1, typename BidirIt2 >
 BidirIt2 move( BidirIt1 first, BidirIt1 last, BidirIt2 d_last );    (C++11 - )
 ```
 
@@ -30,7 +30,7 @@ last-first次移动赋值的代价。
 ##可能的实现
 
 ```C++
-template< class BidirIt1, class BidirIt2 >
+template< typename BidirIt1, typename BidirIt2 >
 BidirIt2 move_backward(BidirIt1 first,
                                      BidirIt1 last,
                                      BidirIt2 d_last)
@@ -55,36 +55,36 @@ BidirIt2 move_backward(BidirIt1 first,
 #include <vector>
 #include <string>
 #include <iostream>
- 
+
 int main()
 {
     std::vector<std::string> src{"foo", "bar", "baz"};
     std::vector<std::string> dest(src.size());
- 
+
     std::cout << "src: ";
     for (const auto &s : src)
     {
         std::cout << s << ' ';
-    }   
+    }
     std::cout << "\ndest: ";
     for (const auto &s : dest)
     {
         std::cout << s << ' ';
-    }   
+    }
     std::cout << '\n';
- 
+
     std::move_backward(src.begin(), src.end(), dest.end());
- 
-    std::cout << "src: ";                                                       
+
+    std::cout << "src: ";
     for (const auto &s : src)
     {
         std::cout << s << ' ';
-    }   
+    }
     std::cout << "\ndest: ";
     for (const auto &s : dest)
     {
         std::cout << s << ' ';
-    }   
+    }
     std::cout << '\n';
 
     return 0;
@@ -94,9 +94,9 @@ int main()
 输出为：
 
 ```C++
-src: foo bar baz 
-dest:    
-src:    
+src: foo bar baz
+dest:
+src:
 dest: foo bar baz
 ```
 

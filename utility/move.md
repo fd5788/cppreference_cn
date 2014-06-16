@@ -3,11 +3,11 @@
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
 ```C++
-template< class T >
+template< typename T >
 typename std::remove_reference<T>::type&& move( T&& t ) noexcept ;              (C++11 - C++14)
 ```
 ```C++
-template< class T >
+template< typename T >
 constexpr typename std::remove_reference<T>::type&& move( T&& t ) noexcept ;    (C++14 - )
 ```
 

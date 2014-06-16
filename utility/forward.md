@@ -3,22 +3,22 @@
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
 ```C++
-template< class T >
+template< typename T >
 T&& forward( typename std::remove_reference<T>::type& t ) noexcept ;              (1)     (C++11 - C++14)
 ```
 
 ```C++
-template< class T >
+template< typename T >
 constexpr T&& forward( typename std::remove_reference<T>::type& t ) noexcept ;    (1)     (C++14 - )
 ```
 
 ```C++
-template< class T >
+template< typename T >
 T&& forward( typename std::remove_reference<T>::type&& t ) noexcept ;             (2)     (C++11 - C++14)
 ```
 
 ```C++
-template< class T >
+template< typename T >
 constexpr T&& forward( typename std::remove_reference<T>::type&& t ) noexcept ;   (2)     (C++14 - )
 ```
 
