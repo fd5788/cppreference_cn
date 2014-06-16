@@ -15,7 +15,7 @@
     * Operator precedence
     * Escape sequences
     * Fundamental types
-    * [Templates](language/templates/templates.md)
+    * [Templates](language/templates.md)
     * Expressions（[en](http://en.cppreference.com/w/cpp/language/expressions)）
         * [Value categories](language/value_category.me)
 * Headers ([en](http://en.cppreference.com/w/cpp/header))
@@ -31,12 +31,12 @@
     * Pair (C++11)
     * Tuple (C++11)
     * Swap, forward and move
-        * [swap](utility/swap.md)
-        * [exchange](utility/exchange.md) (C++14)
+        * [swap](utility/swap.md)（待翻译）
+        * [exchange](utility/exchange.md) (C++14)（待翻译）
         * [forward](utility/forward.md) (C++11)
         * [move](utility/move.md) (C++11)
         * [move_if_noexcept](utility/move_if_noexcept.md) (C++11)
-        * [declval](utility/declval.md) (C++11)
+        * [declval](utility/declval.md) (C++11)（待翻译）
     * Hash support (C++11)
         * [hash](utility/hash.md) (C++11)
     * integer_sequence (C++14)
