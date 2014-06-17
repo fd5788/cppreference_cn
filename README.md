@@ -7,6 +7,9 @@
 
 当然，主要关注C++11新标准部分。
 
+如果你也有兴趣翻译，欢迎，但不建议随便翻翻就算了，要本着精益求精的宗旨来做，
+亦能温故而知新，何乐而不为？
+
 ##Contents
 
 * Languages ([en](http://en.cppreference.com/w/cpp/language))
