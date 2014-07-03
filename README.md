@@ -2,11 +2,11 @@
 
 ##About
 
-[cppreference.com](http://en.cppreference.com/w/)所谓的中文版乃是 google translate的结果，你懂的，于是禀着现学现用现翻译的原则，用到哪部分就先翻译哪部分，不分先后。
+主要翻译自[cppreference.com](http://en.cppreference.com/w/)，有空有心情的时候才会翻译。
 
 当然，主要关注C++11新标准部分。
 
-> 如果你也有兴趣翻译，欢迎，但不建议随便翻翻就算了，要本着精益求精的宗旨来做, 亦能温故而知新，何乐而不为？
+> 如果你也有兴趣翻译，欢迎，亦能温故而知新，何乐而不为？
 
 ##Contents
 
@@ -32,12 +32,12 @@
     * Pair (C++11)
     * Tuple (C++11)
     * Swap, forward and move
-        * [swap](utility/swap.md)（待翻译）
-        * [exchange](utility/exchange.md) (C++14)（待翻译）
+        * [swap](utility/swap.md)
+        * [exchange](utility/exchange.md) (C++14)
         * [forward](utility/forward.md) (C++11)
         * [move](utility/move.md) (C++11)
         * [move_if_noexcept](utility/move_if_noexcept.md) (C++11)
-        * [declval](utility/declval.md) (C++11)（待翻译）
+        * [declval](utility/declval.md) (C++11)
     * Hash support (C++11)
         * [hash](utility/hash.md) (C++11)
     * integer_sequence (C++14)
