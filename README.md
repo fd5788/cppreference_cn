@@ -2,7 +2,7 @@
 
 ##About
 
-主要翻译自[cppreference.com](http://en.cppreference.com/w/)，有空有心情的时候才会翻译。
+主要翻译自 [cppreference.com](http://en.cppreference.com/w/)，有空有心情的时候才会翻译。
 
 当然，主要关注C++11新标准部分。
 
@@ -66,6 +66,8 @@
 * Algorithms library ([en](http://en.cppreference.com/w/cpp/algorithm))
     * [move](algorithm/move.md) (C++11)
     * [move_backward](algorithm/move_backward.md) (C++11)
+    * [sort](algorithm/sort.md)
+    * [stable_sort](algorithm/stable_sort.md)
 * Iterators library ([en](http://en.cppreference.com/w/cpp/iterator))
 * Numerics library ([en](http://en.cppreference.com/w/cpp/numeric))
     * Common mathematical functions

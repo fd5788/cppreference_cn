@@ -1,4 +1,4 @@
-#转发（std::forward（[en](http://en.cppreference.com/w/cpp/utility/forward)）
+#转发（std::forward）
 
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
@@ -22,7 +22,7 @@ template< typename T >
 constexpr T&& forward( typename std::remove_reference<T>::type&& t ) noexcept ;   (2)     (C++14 - )
 ```
 
-在函数模板中按下面的方式使用`forward`调用函数时，转发传递过来的实参及其值类型（[value category](../language/value_category.md)）给另外一个函数。
+在函数模板中按下面的方式使用`forward`调用函数时，转发传递过来的实参及其**值类型**（[value category](../language/value_category.md)）给另外一个函数。
 
 比如，如果`wrapper`函数代码如下，该模板将按下面描述的那样实例化：
 
@@ -129,6 +129,6 @@ rvalue overload, n=3
 
 ##另见
 
-- [move](move.md)（C++11）                            强制转化为右值引用（函数模板）
+- [move](move.md)（C++11）                            强制转换为右值引用（函数模板）
 
-- [move_if_noexcept](move_if_noexcept.md)（C++11）    当移动构造函数未抛出异常时强制转化为右值引用（函数模板）
+- [move_if_noexcept](move_if_noexcept.md)（C++11）    当移动构造函数未抛出异常时强制转换为右值引用（函数模板）

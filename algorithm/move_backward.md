@@ -1,4 +1,4 @@
-#逆向移动（std::move_backward）（[en](http://en.cppreference.com/w/cpp/header/algorithm/move_backward)）
+#反向移动（std::move_backward）
 
 定义于头文件`<algorithm>`（[en](http://en.cppreference.com/w/cpp/header/algorithm)）中：
 
@@ -25,7 +25,7 @@ first, last - 待移动元素区间
 
 ##复杂度
 
-last-first次移动赋值的代价。
+`last-first`次移动赋值的代价。
 
 ##可能的实现
 
@@ -44,7 +44,7 @@ BidirIt2 move_backward(BidirIt1 first,
 
 ##注意
 
-移动重叠区间时，如果目标区间的起始位置不在源区间内，那么用 std::move 移动到目标区间左侧是合适的；如果目标区间的终止位置不在源区间内，那么用 std::move_backward 移动到目标区间右侧亦是合适的。
+移动重叠区间时，如果目标区间的起始位置不在源区间内，那么用`std::move`移动到目标区间左侧是合适的；如果目标区间的终止位置不在源区间内，那么用`std::move_backward`移动到目标区间右侧亦是合适的。
 
 ##例子
 

@@ -1,4 +1,4 @@
-#移动（std::move）（[en](http://en.cppreference.com/w/cpp/header/algorithm/move)）
+#移动（std::move）
 
 定义于头文件`<algorithm>`（[en](http://en.cppreference.com/w/cpp/header/algorithm)）中：
 
@@ -88,4 +88,4 @@ thread 3 ended
 ##另见
 
 - [move_backward](move_backward.md)（C++11）    逆向移动区间里的元素到一个新的位置（函数模板）
-- [move](../utility/move.md)（C++11）           转换为右值引用（函数模板）
+- [move](../utility/move.md)（C++11）           强制转换为右值引用（函数模板）

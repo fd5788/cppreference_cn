@@ -1,4 +1,4 @@
-##强制转化为右值（std::move)（[en](http://en.cppreference.com/w/cpp/utility/move)）
+##强制转换为右值（std::move)
 
 定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
 
@@ -11,7 +11,7 @@ template< typename T >
 constexpr typename std::remove_reference<T>::type&& move( T&& t ) noexcept ;    (C++14 - )
 ```
 
-`std::move`返回指向实参的右值引用，同时转化实参为将亡值（`xvalue`，`eXpiring Value`[en](http://en.cppreference.com/w/cpp/language/value_category)）。
+`std::move`返回指向实参的右值引用，同时转化实参为**将亡值**（`xvalue`，`eXpiring Value`[en](http://en.cppreference.com/w/cpp/language/value_category)）。
 
 接受`xvalue`类型的代码有机会优化不必要的额外开销，通过窃取实参的数据（并未移动数据，只是攻城掠地），而从导致其处于有效（生命期尚未结束）但未指定的状态。
 
@@ -125,5 +125,5 @@ After move assignmentr, the contents of the vector are "Good-bye", "Hello"
 ##另见
 
 - [forward](forward.md)(C++11)                      转发函数实参（函数模板）
-- [move_if_noexcept](move_if_noexcept.md)(C++11)    如果移动构造函数未抛出异常就强制转化为右值引用（函数模板）
+- [move_if_noexcept](move_if_noexcept.md)(C++11)    如果移动构造函数未抛出异常就强制转换为右值引用（函数模板）
 - [move](../algorithm/move.md)(C++11)               移动区间里的元素到另一个区间（函数模板）
