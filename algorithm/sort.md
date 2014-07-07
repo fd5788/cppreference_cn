@@ -16,7 +16,8 @@ void sort( RandomIt first, RandomIt last, Compare comp );       (2)
 ##参数
 
 `first, last` —— 待排序的元素的区间
-       `comp` —— 比较函数，若第一个参数小于第二个则返回`true`。
+
+`comp` —— 比较函数，若第一个参数小于第二个则返回`true`。
        比较函数必须使用下面的等效声明：
        ```C++
        bool cmp(const Type1 &a, const Type2 &b);
