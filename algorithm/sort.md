@@ -19,10 +19,13 @@ void sort( RandomIt first, RandomIt last, Compare comp );       (2)
 
 `comp` —— 比较函数，若第一个参数小于第二个则返回`true`。
        比较函数必须使用下面的等效声明：
+
        ```C++
        bool cmp(const Type1 &a, const Type2 &b);
        ```
+
        比较函数不一定非得声明为`const &`，但是这个函数对象应该不能修改传递过来的参数。
+
        类型`Type1`和`Type2`必须是能够解除引用操作和隐式互转的`RandomIt`类型。
 
 **类型约束**
