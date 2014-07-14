@@ -55,14 +55,14 @@ void nth_element( RandomIt first, RandomIt nth, RandomIt last, Compare comp );  
 #include <vector>
 #include <algorithm>
 #include <functional>
- 
+
 int main()
 {
     std::vector<int> v{5, 6, 4, 3, 2, 6, 7, 9, 3};
- 
+
     std::nth_element(v.begin(), v.begin() + v.size()/2, v.end());
     std::cout << "The median is " << v[v.size()/2] << '\n';
- 
+
     std::nth_element(v.begin(), v.begin()+1, v.end(), std::greater<int>());
     std::cout << "The second largest element is " << v[1] << '\n';
 }
@@ -77,6 +77,6 @@ The second largest element is 7
 
 ##另见
 
-- [partial_sort_copy](partial_sort_copy.md)   按一定顺序排出区间里的前N个元素
-- [stable_sort](stable_sort.md)    对区间的元素进行排序，同时保持相等元素的先后顺序
-- [sort](stable_sort.md)     递增排序，且不一定会保持相等元素的先后次序
+- [partial_sort_copy](partial_sort_copy.md)   按一定顺序排出区间里的前N个元素（函数模板）
+- [stable_sort](stable_sort.md)    对区间的元素进行排序，同时保持相等元素的先后顺序（函数模板）
+- [sort](stable_sort.md)     递增排序，且不一定会保持相等元素的先后次序（函数模板）
