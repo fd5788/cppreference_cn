@@ -7,7 +7,7 @@ template< typename RandomIt >
 void partial_sort( RandomIt first, RandomIt middle, RandomIt last );    (1)
 ```
 ```C++
-template< typename randomIt, typename Compare >
+template< typename RandomIt, typename Compare >
 void partial_sort( RandomIt first, RandomIt middle, RandomIt last, Compare comp );       (2)
 ```
 
