@@ -3,11 +3,11 @@
 定义于头文件`<algorithm>`（[en](http://en.cppreference.com/w/cpp/header/algorithm)）中：
 
 ```C++
-template< class RandomIt >
+template< typename RandomIt >
 void sort( RandomIt first, RandomIt last );    (1)
 ```
 ```C++
-template< class RandomIt, class Compare >
+template< typename RandomIt, typename Compare >
 void sort( RandomIt first, RandomIt last, Compare comp );       (2)
 ```
 
@@ -39,16 +39,16 @@ bool cmp(const Type1 &a, const Type2 &b);
 ##复杂度
 
 ```C++
-O(N*log(N)), 其中N = std::distance(first, last)为平均比较次数。( - C++11)
+O(N*log(N)), 其中`N = std::distance(first, last)`为平均比较次数。( - C++11)
 ```
 ```C++
-O(N*log(N)), 其中N = std::distance(first, last)为比较次数。(C++11 - )
+O(N*log(N)), 其中`N = std::distance(first, last)`为比较次数。(C++11 - )
 ```
 
 ##例子
 
 ```C++
-nclude <algorithm>
+#include <algorithm>
 #include <functional>
 #include <array>
 #include <iostream>
