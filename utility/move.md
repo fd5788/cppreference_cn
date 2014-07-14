@@ -96,9 +96,9 @@ int main()
     // string move assignment operator is often implemented as swap,
     // in this case, the moved-from object is NOT empty
     std::string str2 = "Good-bye";
-    std::cout << "Before move from str2, str2 = '" << str2 << "'\n";
+    std::cout << "Before move from str2, str2 = \"" << str2 << "\"\n";
     v[0] = std::move(str2);
-    std::cout << "After move from str2, str2 = '" << str2 << "'\n";
+    std::cout << "After move from str2, str2 = \"" << str2 << "\"\n";
     std::cout << "After move assignmentr, ";
     std::cout << "the contents of the vector are \"" << v[0]
                                          << "\", \"" << v[1] << "\"\n";
@@ -113,8 +113,8 @@ int main()
 After copy, str is "Hello"
 After move, str is ""
 The contents of the vector are "Hello", "Hello"
-Before move from str2, str2 = 'Good-bye'
-After move from str2, str2 = 'Hello'
+Before move from str2, str2 = "Good-bye"
+After move from str2, str2 = "Hello"
 After move assignmentr, the contents of the vector are "Good-bye", "Hello"
 ```
 
