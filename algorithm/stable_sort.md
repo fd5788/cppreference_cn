@@ -85,5 +85,5 @@ int main()
 
 ##另见
 
-- [partial_sort](partial_sort.md)   按一定顺序排出区间里的前N个元素
-- [sort](stable_sort.md)     递增排序，且不一定会保持相等元素的先后次序
+- [partial_sort](partial_sort.md)   按一定顺序排出区间里的前N个元素（函数模板）（函数模板）
+- [sort](stable_sort.md)     递增排序，且不一定会保持相等元素的先后次序（函数模板）（函数模板）
