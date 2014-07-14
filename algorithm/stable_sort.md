@@ -37,9 +37,8 @@ bool cmp(const Type1 &a, const Type2 &b);
 
 ##复杂度
 
-```C++
-$O(N\cdot log^2(N))$, 其中`N = std::distance(first, last)`为比较次数。若能够使用额外空间，则复杂度会降为$O(N\cdot log(N))$。
-```
+O(N*log^2(N)), 其中`N = std::distance(first, last)`为比较次数。若能够使用额外空间，则复杂度会降为O(N*log(N))。
+
 ##注意
 
 该函数会先尝试分配等同于待排序列长度大小的临时缓冲区，通常通过调用库函数`std::get_temporary_buffer`来实现。如果空间分配失败，将会选择低效的版本。
@@ -51,30 +50,30 @@ $O(N\cdot log^2(N))$, 其中`N = std::distance(first, last)`为比较次数。�
 #include <iostream>
 #include <string>
 #include <vector>
- 
+
 struct Employee {
-    Employee(int age, std::string name) : age(age), name(name) { } 
+    Employee(int age, std::string name) : age(age), name(name) { }
     int age;
     std::string name;  // Does not particpate in comparisons
 };
- 
+
 bool operator<(const Employee &lhs, const Employee &rhs) {
     return lhs.age < rhs.age;
 }
- 
+
 int main()
 {
-    std::vector<Employee> v = { 
+    std::vector<Employee> v = {
         Employee(108, "Zaphod"),
         Employee(32, "Arthur"),
         Employee(108, "Ford"),
-    };  
- 
+    };
+
     std::stable_sort(v.begin(), v.end());
- 
+
     for (const Employee &e : v) {
         std::cout << e.age << ", " << e.name << '\n';
-    }   
+    }
 }
 ```
 
