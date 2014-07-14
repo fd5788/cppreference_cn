@@ -1,6 +1,6 @@
 #排序（std::sort）
 
-定义于头文件`<algorithm>`（[en](http://en.cppreference.com/w/cpp/header/algorithm)）中：
+定义于头文件`<algorithm>`中：
 
 ```C++
 template< typename RandomIt >
@@ -38,12 +38,9 @@ bool cmp(const Type1 &a, const Type2 &b);
 
 ##复杂度
 
-```C++
 O(N*log(N)), 其中`N = std::distance(first, last)`为平均比较次数。( - C++11)
-```
-```C++
+
 O(N*log(N)), 其中`N = std::distance(first, last)`为比较次数。(C++11 - )
-```
 
 ##例子
 
