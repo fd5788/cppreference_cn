@@ -1,6 +1,6 @@
 #转发（std::forward）
 
-定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
+定义于头文件`<utility>`中：
 
 ```C++
 template< typename T >
@@ -130,5 +130,4 @@ rvalue overload, n=3
 ##另见
 
 - [move](move.md)（C++11）                            强制转换为右值引用（函数模板）
-
 - [move_if_noexcept](move_if_noexcept.md)（C++11）    当移动构造函数未抛出异常时强制转换为右值引用（函数模板）
