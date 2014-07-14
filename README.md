@@ -21,6 +21,13 @@
         * [Value categories](language/value_category.me)
 * Headers ([en](http://en.cppreference.com/w/cpp/header))
 * Concepts ([en](http://en.cppreference.com/w/cpp/concept))
+* Algorithms library ([en](http://en.cppreference.com/w/cpp/algorithm))
+    * [move](algorithm/move.md) (C++11)
+    * [move_backward](algorithm/move_backward.md) (C++11)
+    * [sort](algorithm/sort.md)
+    * [stable_sort](algorithm/stable_sort.md)
+    * [partial_sort](algorithm/partial_sort.md)
+    * [nth_element](algorithm/nth_element.md)
 * Utilities library ([en](http://en.cppreference.com/w/cpp/utility))
     * Type support
     * Dynamic memory management
@@ -31,15 +38,13 @@
     * Function objects
     * Pair (C++11)
     * Tuple (C++11)
-    * Swap, forward and move
-        * [swap](utility/swap.md)
-        * [exchange](utility/exchange.md) (C++14)
-        * [forward](utility/forward.md) (C++11)
-        * [move](utility/move.md) (C++11)
-        * [move_if_noexcept](utility/move_if_noexcept.md) (C++11)
-        * [declval](utility/declval.md) (C++11)
-    * Hash support (C++11)
-        * [hash](utility/hash.md) (C++11)
+    * [swap](utility/swap.md)
+    * [exchange](utility/exchange.md) (C++14)
+    * [forward](utility/forward.md) (C++11)
+    * [move](utility/move.md) (C++11)
+    * [move_if_noexcept](utility/move_if_noexcept.md) (C++11)
+    * [declval](utility/declval.md) (C++11)
+    * [hash](utility/hash.md) (C++11)
     * integer_sequence (C++14)
 * Strings library ([en](http://en.cppreference.com/w/cpp/string))
     * basic_string
@@ -63,13 +68,6 @@
     * stack
     * queue
     * priority_queue
-* Algorithms library ([en](http://en.cppreference.com/w/cpp/algorithm))
-    * [move](algorithm/move.md) (C++11)
-    * [move_backward](algorithm/move_backward.md) (C++11)
-    * [sort](algorithm/sort.md)
-    * [stable_sort](algorithm/stable_sort.md)
-    * [partial_sort](algorithm/partial_sort.md)
-    * [nth_element](algorithm/nth_element.md)
 * Iterators library ([en](http://en.cppreference.com/w/cpp/iterator))
 * Numerics library ([en](http://en.cppreference.com/w/cpp/numeric))
     * Common mathematical functions
