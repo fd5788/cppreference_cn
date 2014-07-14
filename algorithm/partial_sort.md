@@ -66,7 +66,7 @@ int main()
 
 ##另见
 
-- [nth_element](nth_element.md)    在确保区间被给定元素分开时对其部分排序
-- [partial_sort_copy](partial_sort_copy.md)   按一定顺序排出区间里的前N个元素
-- [stable_sort](stable_sort.md)    对区间的元素进行排序，同时保持相等元素的先后顺序
-- [sort](stable_sort.md)     递增排序，且不一定会保持相等元素的先后次序
+- [nth_element](nth_element.md)    在确保区间被给定元素分开时对其部分排序（函数模板）
+- [partial_sort_copy](partial_sort_copy.md)   按一定顺序排出区间里的前N个元素（函数模板）
+- [stable_sort](stable_sort.md)    对区间的元素进行排序，同时保持相等元素的先后顺序（函数模板）
+- [sort](stable_sort.md)     递增排序，且不一定会保持相等元素的先后次序（函数模板）
