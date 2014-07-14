@@ -39,9 +39,7 @@ bool cmp(const Type1 &a, const Type2 &b);
 
 ##复杂度
 
-```C++
 约为`(last-first)log(middle-first)次`cmp`函数调用。
-```
 
 ##例子
 
