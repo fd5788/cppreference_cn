@@ -21,7 +21,6 @@ void partial_sort( RandomIt first, RandomIt middle, RandomIt last, Compare comp 
 
 `comp` —— 比较函数，若第一个参数小于第二个则返回`true`。
        比较函数必须使用下面的等效声明：
-
 `bool cmp(const Type1 &a, const Type2 &b);`
 
 比较函数不一定非得声明为`const &`，但是这个函数对象应该不能修改传递过来的参数。
