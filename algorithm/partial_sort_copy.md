@@ -89,6 +89,6 @@ The return value is the iterator to 15
 
 ##另见
 
-- [partial_sort_copy](partial_sort_copy.md)   按一定顺序排出区间里的前N个元素
-- [sort](stable_sort.md)     递增排序，且不一定会保持相等元素的先后次序
-- [stable_sort](stable_sort.md)    对区间的元素进行排序，同时保持相等元素的先后顺序
+- [partial_sort_copy](partial_sort_copy.md)   按一定顺序排出区间里的前N个元素（函数模板）
+- [sort](stable_sort.md)     递增排序，且不一定会保持相等元素的先后次序（函数模板）
+- [stable_sort](stable_sort.md)    对区间的元素进行排序，同时保持相等元素的先后顺序（函数模板）
