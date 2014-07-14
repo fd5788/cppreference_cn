@@ -1,6 +1,6 @@
 ##强制转换为右值（std::move)
 
-定义于头文件`<utility>`（[en](http://en.cppreference.com/w/cpp/header/utility)）中：
+定义于头文件`<utility>`中：
 
 ```C++
 template< typename T >
