@@ -2,11 +2,9 @@
 
 ##About
 
-主要翻译自 [cppreference.com](http://en.cppreference.com/w/)，不定时更新。
+主要翻译自[cppreference.com](http://en.cppreference.com/w/)，不定时更新。
 
 当然，主要关注C++11新标准部分。
-
-> 如果你也有兴趣翻译，欢迎，亦能温故而知新，何乐而不为？
 
 ##Contents
 
