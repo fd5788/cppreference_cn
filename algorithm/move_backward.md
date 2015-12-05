@@ -9,7 +9,7 @@ BidirIt2 move( BidirIt1 first, BidirIt1 last, BidirIt2 d_last );    (C++11 - )
 
 移动区间 [first, last) 之间的元素到另一个以 d_last 结尾的区间。虽然元素是逆向移动的（最后一个元素先移动），但它们的相对顺序保持不变。
 
-如果 d_last 在区间 [first, last)之间，将导致未定义行为，如此必须用[std::move](move.md)替代之。
+如果 d_last 在区间 [first, last)之间，将导致未定义行为，此时须用[std::move](move.md)替代之。
 
 ##参数
 
@@ -44,7 +44,7 @@ BidirIt2 move_backward(BidirIt1 first,
 
 ##注意
 
-移动重叠区间时，如果目标区间的起始位置不在源区间内，那么用`std::move`移动到目标区间左侧是合适的；如果目标区间的终止位置不在源区间内，那么用`std::move_backward`移动到目标区间右侧亦是合适的。
+移动重叠区间时，如果目标区间的起始位置不在源区间内，那么应该用`std::move`移动到目标区间左侧；如果目标区间的终止位置不在源区间内，那么应该用`std::move_backward`移动到目标区间右侧。
 
 ##例子
 

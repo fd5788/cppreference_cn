@@ -41,7 +41,7 @@ OutputIt move(InputIt first, InputIt last, OutputIt d_first)
 
 ##注意
 
-移动重叠区间时，如果目标区间的起始位置不在源区间内，那么用[std::move](move.md) 移动到目标区间左侧是合适的；如果目标区间的终止位置不在源区间内，那么用[std::move_backward](move_backward.md) 移动到目标区间右侧亦是合适的。
+移动重叠区间时，如果目标区间的起始位置不在源区间内，那么应该用[std::move](move.md) 移动到目标区间左侧；如果目标区间的终止位置不在源区间内，那么应该用[std::move_backward](move_backward.md) 移动到目标区间右侧。
 
 ##例子
 
