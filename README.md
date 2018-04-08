@@ -1,12 +1,12 @@
-#C++11 快速参考
+# C++11 快速参考
 
-##About
+## About
 
-主要翻译自[cppreference.com](http://en.cppreference.com/w/)，不定时更新。
+译自[cppreference.com](http://en.cppreference.com/w/)。
 
-当然，主要关注C++11新标准部分。
+主要关注C++11新标准部分。
 
-##Contents
+## Contents
 
 * Languages ([en](http://en.cppreference.com/w/cpp/language))
     * Preprocessor
